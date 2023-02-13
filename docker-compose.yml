@@ -1,8 +1,13 @@
 version: "3"
 
 services:
-  next:
+  next-app:
     container_name: "next"
     build: ./next/
     ports:
       - "3000:3000"
+  express-app:
+    container_name: newappnew
+    build: ./express
+    ports:
+      - 4000:4000
